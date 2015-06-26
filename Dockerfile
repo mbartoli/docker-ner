@@ -8,8 +8,7 @@ RUN apt-get -y install \
 	python-dev \
 	python-pip \
 	wget \
-	unzip
+	unzip \
+	ipython
 RUN pip install nltk
-RUN wget http://nlp.stanford.edu/software/stanford-ner-2014-06-16.zip && unzip stanford-ner-2014-06-16.zip
-
-
+RUN wget -O ner.zip http://nlp.stanford.edu/software/stanford-ner-2015-04-20.zip && unzip ner.zip
