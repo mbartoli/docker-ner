@@ -9,6 +9,10 @@ RUN apt-get -y install \
 	python-pip \
 	wget \
 	unzip \
-	ipython
+	ipython 
+RUN pip install numpy
 RUN pip install nltk
-RUN wget -O ner.zip http://nlp.stanford.edu/software/stanford-ner-2015-04-20.zip && unzip ner.zip
+WORKDIR /home
+RUN wget -O ner.zip http://nlp.stanford.edu/software/stanford-ner-2015-04-20.zip
+RUN unzip ner.zip
+
