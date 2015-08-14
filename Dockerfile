@@ -1,4 +1,4 @@
-# Version 0.0.1
+# Version 1.0.0
 FROM ubuntu:14.10
 MAINTAINER Mike Bartoli "michael.bartoli@pomona.edu"
 RUN apt-get update
