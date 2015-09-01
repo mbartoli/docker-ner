@@ -1,6 +1,11 @@
 # docker-ner
 Docker container for Stanford Named Entity Recognizer (NER)
 
+Start the docker container
+```
+docker run -it mbartoli/ner /bin/bash
+```
+
 Start the NER server within the container
 ```
 java -mx1000m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer \     
