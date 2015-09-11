@@ -20,3 +20,8 @@ import ner
 tagger = ner.SocketNER(host='localhost', port=8080)
 tagger.get_entities("Pomona College is located in Claremont, California")
 ```
+
+```
+Out[3]: 
+{u'LOCATION': [u'Claremont', u'California'], u'ORGANIZATION': [u'Pomona College']}
+```
